@@ -1,0 +1,257 @@
+body{
+    height:100%;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.bg-black {
+    display: none;
+    position: absolute;
+    z-index: 64;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    transition: opacity .3s linear;
+}
+.fadeIn {
+    opacity: 1;
+}
+
+.header {
+    position: relative;
+    z-index: 65;
+    left: 0;
+    top: 0;
+    height: 50px;
+    background: #313131;
+}
+.header .logo {
+    float: left;
+    padding-top: 10px;
+}
+
+.header .logo a {
+    width: 30px;
+    height: 30px;
+    background: url(../img/nav_black/logo.png) no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    float: left;
+    margin-left: 220px;
+}
+
+.nav-item {
+    float: left;
+    position: relative;
+}
+
+.nav-item a {
+    padding: 5px 20px 0;
+    height: 50px;
+    line-height: 42px;
+    color:#ffffff;
+}
+
+.nav-item a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.sub-nav {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 999;
+    width: 100%;
+    background-color: #313131;
+    height: 0;
+    transition: height .3s;
+}
+
+.sub-nav_show {
+    height: 139px !important;
+}
+
+.sub-nav__wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.sub-nav__wrap[data-link="nav_sofa"] {
+    padding-left: 490px;
+}
+
+.sub-nav__wrap[data-link="nav_cab"] {
+    padding-left: 306px;
+}
+
+.sub-nav__wrap[data-link="nav_desk"] {
+    padding-left: 678px;
+}
+
+.sub-nav__wrap[data-link="nav_chair"] {
+    padding-left: 678px;
+}
+
+.sub-nav__wrap[data-link="nav_bed"] {
+    padding-left: 520px;
+}
+
+.sub-nav a {
+    float: left;
+    width: 140px;
+    padding-top: 14px;
+    text-align: center;
+    color: #666;
+    opacity: 0.7;
+    transition: all .3s linear;
+    animation: toLeft 0.5s;
+    text-decoration: none;
+}
+
+@keyframes toLeft {
+    from {
+        margin-left: 30px;
+    }
+    to {
+        margin-left: 0
+    }
+}
+
+.sub-nav a:hover {
+    color: #111;
+    opacity: 1;
+}
+
+.sub-nav a img {
+    display: inline-block;
+    height: 80px;
+}
+
+.sub-nav a span {
+    display: block;
+    padding-top: 18px;
+    font-size: 12px;
+    color:#f5f5f5;
+}
+
+/*  user info*/
+.user {
+    float: right;
+    position: relative;
+    width: 60px;
+    height: 50px;
+}
+
+.user:hover .user-hover,
+.user:hover .user-info {
+    opacity: 1;
+    display: block;
+}
+
+.user-img {
+    position: absolute;
+    z-index: 66;
+    width: 60px;
+    padding-top: 10px;
+    padding-left: 13px;
+}
+
+.user-img .arrow-bg,
+.user-img .arrow-font {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.user-img .arrow-bg {
+    border-width: 6px;
+    border-color: #999 transparent transparent transparent;
+    border-style: solid dashed dashed;
+}
+
+.user-img .arrow-font {
+    left: 41px;
+    border-width: 5px;
+    border-color: #fff transparent transparent transparent;
+    border-style: solid dashed dashed;
+}
+
+.user .user-hover {
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 50px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 3px solid #C0C0C0;
+    background-color: #fff;
+    transition: all .2s linear;
+}
+
+.user-info {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 50px;
+    height: 204px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 12px;
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+.user-info ul {
+    padding: 0 20px;
+}
+
+.user-info li {
+    width: 112px;
+    margin-top: 20px;
+}
+
+.user-info a {
+    color: #515151;
+}
+
+.user-info a:hover {
+    color: rgb(49, 165, 231);
+}
+
+.user-info li.login {
+}
+
+.user-info li.login a {
+    width: 112px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    background-color: #313131;
+}
+
+.user-info li.register {
+    color: #999;
+}
+
+.user-info li.register a {
+    display: inline;
+    color: #21A9E7;
+}
+
+.user-info li.register a:hover {
+    text-decoration: underline;
+}
+
+

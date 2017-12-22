@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zaozuo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/scrollanim.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="wrapper" id="wrapper">
+    <div class="bg-white"></div>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><a href="#"></a></h1>
+
+            <ul class="nav hidden-xs hidden-sm">
+                <li class="nav-item">
+                    <a href="#">首页</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_sofa">
+                    <a href="#">沙发</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_cab">
+                    <a href="#">柜架</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_desk">
+                    <a href="#">桌几</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_chair">
+                    <a href="#">椅凳</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_bed">
+                    <a href="#">床品</a>
+                </li>
+            </ul>
+            <div class="user">
+                <div class="user-hover"></div>
+                <div class="user-img">
+                    <img src="img/index/common/user.png" alt="#">
+                    <span class="arrow-bg"></span>
+                    <span class="arrow-font"></span>
+                </div>
+                <!--user info-->
+                <div class="user-info">
+                    <ul id="userList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--sub nav-->
+    <div class="sub-nav">
+        <div class="sub-nav__wrap" data-link="nav_sofa">
+            <a href="#">
+                <img src="img/index/common/sofa_0.png" alt="#">
+                <span>沙发墩</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/sofa_1.png" alt="#">
+                <span>单人沙发</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/sofa_2.png" alt="#">
+                <span>双人沙发</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/sofa_3.png" alt="#">
+                <span>三人沙发</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/sofa_4.png" alt="#">
+                <span>四人沙发</span>
+            </a>
+        </div>
+
+        <div class="sub-nav__wrap" data-link="nav_cab">
+            <a href="#">
+                <img src="img/index/common/cab_1.png" alt="#">
+                <span>置物柜</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/cab_2.png" alt="#">
+                <span>书柜|书架</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/cab_3.png" alt="#">
+                <span>电视柜</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/cab_4.png" alt="#">
+                <span>置物架</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/cab_5.png" alt="#">
+                <span>衣柜</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/cab_6.png" alt="#">
+                <span>单元格</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/cab_8.png" alt="#">
+                <span>衣帽架</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/cab_9.png" alt="#">
+                <span>鞋柜|玄关</span>
+            </a>
+        </div>
+        <div class="sub-nav__wrap" data-link="nav_desk">
+            <a href="#">
+                <img src="img/index/common/desk_1.png" alt="#">
+                <span>书桌|餐桌</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/desk_2.png" alt="#">
+                <span>茶几</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/desk_3.png" alt="#">
+                <span>边几</span>
+            </a>
+        </div>
+        <div class="sub-nav__wrap" data-link="nav_chair">
+            <a href="#">
+                <img src="img/index/common/chair_1.png" alt="#">
+                <span>座椅</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/chair_2.png" alt="#">
+                <span>坐墩</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/chair_3.png" alt="#">
+                <span>凳子</span>
+            </a>
+        </div>
+        <div class="sub-nav__wrap" data-link="nav_bed">
+            <a href="#">
+                <img src="img/index/common/bed_1.png" alt="#">
+                <span>床</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/bed_2.png" alt="#">
+                <span>床垫</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/bed_3.png" alt="#">
+                <span>床头柜</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/bed_4.png" alt="#">
+                <span>床品4件套</span>
+            </a>
+            <a href="#">
+                <img src="img/index/common/bed_5.png" alt="#">
+                <span>床尾凳</span>
+            </a>
+        </div>
+    </div>
+    <div id="myCarousel" class="carousel slide">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators" id="indicators">
+
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner" id="items">
+
+        </div>
+    </div>
+</div>
+<!--全球惊艳/万千证言-->
+<div class="container">
+    <div class="row title">
+        <div class="col-xs-12">
+            <h2>全球惊艳/万千证言/造作定义作品</h2>
+            <p>有人说造作是家居设计界的G20，其实我们更关心如何从大师走到大众</p>
+        </div>
+    </div>
+    <div id="productsRow" data-kui-anim="fadeIn" class="row details">
+    </div>
+
+
+</div>
+
+<!--服务承诺-->
+<div class="container promise hidden-xs hidden-sm">
+    <img src="img/promise/51243d23e262cc17888c60504736a270.jpg" alt="">
+    <div class="row">
+        <img class="hideImg" src="img/promise/51243d23e262cc17888c60504736a270.jpg" alt="">
+        <div class="container content">
+            <!--row1-->
+            <div class="row1">
+                <div class="col-lg-2 col-sm-3 col-xs-6 promise1">
+                    <img src="img/promise/icon-50-aboutzz-second_d78fb26_01.png" alt="">
+                </div>
+                <div class="col-lg-2 col-sm-3 col-xs-6 promise1">
+                    <img src="img/promise/icon-50-aboutzz-second_d78fb26_02.png" alt="">
+                </div>
+                <div class="col-lg-2 col-sm-3 hidden-xs promise1">
+                    <img src="img/promise/icon-50-aboutzz-second_d78fb26_03.png" alt="">
+                </div>
+                <div class="col-lg-2 col-sm-3 hidden-xs promise1">
+                    <img src="img/promise/icon-50-aboutzz-second_d78fb26_04.png" alt="">
+                </div>
+                <div class="col-lg-2 hidden-md hidden-sm hidden-xs promise1">
+                    <img src="img/promise/icon-50-aboutzz-second_d78fb26_05.png" alt="">
+                </div>
+                <div class="col-lg-2 hidden-md hidden-sm hidden-xs promise1">
+                    <img src="img/promise/icon-50-aboutzz-second_d78fb26_06.png" alt="">
+                </div>
+            </div>
+            <!--row2-->
+            <div class="row2">
+                <div class="col-lg-2 col-sm-3 col-xs-6 promise2">
+                    <p>27国/百位设计大师的</p>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-xs-6 promise2">
+                    <p>57精工大厂/100%手检</p>
+                </div>
+                <div class="col-lg-2 col-sm-3 hidden-xs promise2">
+                    <p>全国包邮/166城</p>
+                </div>
+                <div class="col-lg-2 col-sm-3 hidden-xs promise2">
+                    <p>延期高利补偿/确保</p>
+                </div>
+                <div class="col-lg-2 hidden-md hidden-sm hidden-xs promise2">
+                    <p>价格保障/变动返差价</p>
+                </div>
+                <div class="col-lg-2 hidden-md hidden-sm hidden-xs promise2">
+                    <p>三年质保</p>
+                </div>
+            </div>
+            <!--row3-->
+            <div class="row3">
+                <div class="col-lg-2 col-sm-3 col-xs-6 promise3">
+                    <h2>签&nbsp;名&nbsp;正&nbsp;品</h2>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-xs-6 promise3">
+                    <h2>欧&nbsp;标&nbsp;制&nbsp;造</h2>
+                </div>
+                <div class="col-lg-2 col-sm-3 hidden-xs promise3">
+                    <h2>免&nbsp;费&nbsp;送&nbsp;装</h2>
+                </div>
+                <div class="col-lg-2 col-sm-3 hidden-xs promise3">
+                    <h2>准&nbsp;时&nbsp;交&nbsp;付</h2>
+                </div>
+                <div class="col-lg-2 hidden-md hidden-sm hidden-xs promise3">
+                    <h2>7&nbsp;日&nbsp;保&nbsp;价</h2>
+                </div>
+                <div class="col-lg-2 hidden-md hidden-sm hidden-xs promise3">
+                    <h2>7&nbsp;日&nbsp;退&nbsp;换</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 产品分类 -->
+<div class="container">
+    <br>
+    <div class="row title">
+        <div class="row">
+            <h2>全品目录/签名设计正品</h2>
+        </div>
+    </div>
+    <div class="row floor" id="f1">
+        <div class="col col-xs-2 sub-title floor-top">沙发</div>
+        <div class="col col-xs-10 floor-content" style="text-align:right">
+            <a href="#">沙发墩</a>|
+            <a href="#">单人沙发</a>|
+            <a href="#">双人沙发</a>|
+            <a href="#">三人沙发</a>|
+            <a href="#">四人沙发</a>
+        </div>
+    </div>
+    <hr>
+    <div id="productsRow-sofa" data-kui-anim="fadeIn" class="row details">
+        <!--<div class="product col-md-3 col-sm-6 col-xs-12 hidden-xs">-->
+        <!--</div>-->
+    </div>
+
+    <br>
+    <div class="row floor" id="f2">
+        <div class="col col-xs-2 sub-title floor-top">床·床品</div>
+        <div class="col col-xs-10 floor-content" style="text-align:right">
+            <a href="#">床</a>|
+            <a href="#">床垫</a>|
+            <a href="#">床头柜</a>|
+            <a href="#">床品</a>|
+            <a href="#">床褥</a>
+        </div>
+    </div>
+    <hr>
+    <div id="productsRow-bed" data-kui-anim="fadeIn" class="row details">
+        <!--<div class="product col-md-3 col-sm-6 col-xs-12 hidden-xs">-->
+        <!--</div>-->
+    </div>
+
+    <br>
+    <div class="row floor" id="f3">
+        <div class="col col-xs-2 sub-title floor-top">柜架</div>
+        <div class="col col-xs-10 floor-content" style="text-align:right">
+            <a href="#">置物柜</a>|
+            <a href="#">书柜</a>|
+            <a href="#">电视柜</a>|
+            <a href="#">置物架</a>|
+            <a href="#">衣柜</a>|
+            <a href="#">单元格</a>|
+            <a href="#">衣帽架</a>|
+            <a href="#">玄关</a>
+        </div>
+    </div>
+    <hr>
+    <div id="productsRow-chest" data-kui-anim="fadeIn" class="row details">
+        <!--<div class="product col-md-3 col-sm-6 col-xs-12 hidden-xs">-->
+        <!--</div>-->
+    </div>
+
+    <br>
+    <div class="row floor" id="f4">
+        <div class="col col-xs-2 sub-title floor-top">桌几</div>
+        <div class="col col-xs-10 floor-content" style="text-align:right">
+            <a href="#">书桌·餐桌</a>|
+            <a href="#">茶几</a>|
+            <a href="#">边几</a>
+        </div>
+    </div>
+    <hr>
+    <div id="productsRow-table" data-kui-anim="fadeIn" class="row details">
+        <!--<div class="product col-md-3 col-sm-6 col-xs-12 hidden-xs">-->
+        <!--</div>-->
+    </div>
+
+    <br>
+    <div class="row floor" id="f5">
+        <div class="col col-xs-2 sub-title floor-top">椅凳</div>
+        <div class="col col-xs-10 floor-content" style="text-align:right">
+            <a href="#">座椅</a>|
+            <a href="#">坐墩</a>|
+            <a href="#">凳子</a>
+        </div>
+    </div>
+    <hr>
+    <div id="productsRow-chair" data-kui-anim="fadeIn" class="row details">
+        <!--<div class="product col-md-3 col-sm-6 col-xs-12 hidden-xs">-->
+        <!--</div>-->
+    </div>
+</div>
+
+<!--甄选设计师-->
+<div class="container whole">
+    <div class="row title">
+        <div class="col-xs-12">
+            <h2>甄选全球上百位顶尖设计师</h2>
+            <p>Global Designers of ZAOZUO</p>
+        </div>
+    </div>
+    <div class="row designersRow">
+        <div class="col-sm-3 designer">
+            <img src="img/designer/a913c79d9cd1d2f806bfeeb22161af57.jpg">
+            <div class="shadowBlack">
+                <img src="img/designer/a913c79d9cd1d2f806bfeeb22161af57.jpg">
+            </div>
+            <div class="designerGlobal">
+                <h1>Luca Nichetto</h1>
+                <p>Italy | Sweden</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--电梯-->
+<div id="lift" class="MM">
+    <ul class="lift_list">
+        <li class="lift_item">
+            <a href="javascript:;" class="lift_btn">
+                <span class="lift_btn_txt">沙发</span>
+            </a>
+        </li>
+        <li class="lift_item">
+            <a href="javascript:;" class="lift_btn">
+                <span class="lift_btn_txt">床品</span>
+            </a>
+        </li>
+        <li class="lift_item">
+            <a href="javascript:;" class="lift_btn">
+                <span class="lift_btn_txt">柜架</span>
+            </a>
+        </li>
+        <li class="lift_item" >
+            <a href="javascript:;" class="lift_btn">
+                <span class="lift_btn_txt">桌几</span>
+            </a>
+        </li>
+        <li class="lift_item" >
+            <a href="javascript:;" class="lift_btn">
+                <span class="lift_btn_txt">椅凳</span>
+            </a>
+        </li>
+        <li class="lift_item" >
+            <a href="javascript:;" class="lift_btn">
+                <span class="lift_btn_txt">回到顶部</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row first-row">
+            <div class="col-sm-3 col-xs-6 left">
+                <a href="#"><img style="width:100%;" src="img/index/common/footer-logo.png"></a>
+                <a href="#" class="link">zaozuo.com</a>
+
+            </div>
+            <div class="col-sm-6 hidden-xs middle">
+                <div class="row ">
+                    <div class="col-sm-3">
+                        <h3>关于造作</h3>
+                        <ul>
+                            <li><a href="#">团队介绍</a></li>
+                            <li><a href="#">设计团队</a></li>
+                            <li><a href="#">媒体报道</a></li>
+                            <li><a href="#">知识产权</a></li>
+                            <li><a href="#">加入造作</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3>帮助中心</h3>
+                        <ul>
+                            <li><a href="">购物指南</a></li>
+                            <li><a href="">订单管理</a></li>
+                            <li><a href="">常见问题</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3>服务支持</h3>
+                        <ul>
+                            <li><a href="">服务保障</a></li>
+                            <li><a href="">用户协议</a></li>
+                            <li><a href="">物流售后服务</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3>商业合作</h3>
+                        <ul>
+                            <li><a href="">集合采购</a></li>
+                            <li><a href="">渠道合作</a></li>
+                            <li><a href="">品牌合作</a></li>
+                            <li><a href="">媒体合作</a></li>
+                            <li><a href="">设计师入驻</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-8 right">
+                <h3>联系我们</h3>
+                <h2 class="tel">400-6636-926 <span>(9:00~21:00)</span></h2>
+                <button class="CSol">在线客服</button>
+            </div>
+        </div>
+    </div>
+    <div class="second-row">
+        <p>Copyright © 2015 zaozuo.com Inc.All Rights Reserved. 北京造化科技有限公司</p>
+        <p>版权所有 京ICP备14049641号-1 增值电信业务经营许可证：京ICP证150098号</p>
+        <p>造作官网-全品类设计家居品牌</p>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/navChange.js"></script>
+<script src="js/check_uid.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/Lift.js"></script>
+<!-- <script src="js/scrollanim.js"></script> -->
+<script src="js/01_recommdation.js"></script>
+<script src="js/02_designerGlobal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/show.css">
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <div class="bg-black"></div>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><a href="#"></a></h1>
+            <ul class="nav ">
+                <li class="nav-item">
+                    <a href="#">首页</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_sofa">
+                    <a href="#">沙发</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_cab">
+                    <a href="#">柜架</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_desk">
+                    <a href="#">桌几</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_chair">
+                    <a href="#">椅凳</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_bed">
+                    <a href="#">床品</a>
+                </li>
+            </ul>
+            <div class="user">
+                <div class="user-hover"></div>
+                <div class="user-img">
+                    <img src="img/nav_black/user.png" alt="#">
+                    <span class="arrow-bg"></span>
+                    <span class="arrow-font"></span>
+                </div>
+                <!--user info-->
+                <div class="user-info">
+                    <ul id="userList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--sub nav-->
+    <div class="sub-nav">
+        <div class="sub-nav__wrap" data-link="nav_sofa">
+            <a href="#">
+                <img src="img/nav_black/sofa_0.png" alt="#">
+                <span>沙发墩</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/sofa_1.png" alt="#">
+                <span>单人沙发</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/sofa_2.png" alt="#">
+                <span>双人沙发</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/sofa_3.png" alt="#">
+                <span>三人沙发</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/sofa_4.png" alt="#">
+                <span>四人沙发</span>
+            </a>
+        </div>
+
+        <div class="sub-nav__wrap" data-link="nav_cab">
+            <a href="#">
+                <img src="img/nav_black/cab_1.png" alt="#">
+                <span>置物柜</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_2.png" alt="#">
+                <span>书柜|书架</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_3.png" alt="#">
+                <span>电视柜</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_4.png" alt="#">
+                <span>置物架</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_5.png" alt="#">
+                <span>衣柜</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_6.png" alt="#">
+                <span>单元格</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_8.png" alt="#">
+                <span>衣帽架</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_9.png" alt="#">
+                <span>鞋柜|玄关</span>
+            </a>
+        </div>
+        <div class="sub-nav__wrap" data-link="nav_desk">
+            <a href="#">
+                <img src="img/nav_black/desk_1.png" alt="#">
+                <span>书桌|餐桌</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/desk_2.png" alt="#">
+                <span>茶几</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/desk_3.png" alt="#">
+                <span>边几</span>
+            </a>
+        </div>
+        <div class="sub-nav__wrap" data-link="nav_chair">
+            <a href="#">
+                <img src="img/nav_black/chair_1.png" alt="#">
+                <span>座椅</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/chair_2.png" alt="#">
+                <span>坐墩</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/chair_3.png" alt="#">
+                <span>凳子</span>
+            </a>
+        </div>
+        <div class="sub-nav__wrap" data-link="nav_bed">
+            <a href="#">
+                <img src="img/nav_black/bed_1.png" alt="#">
+                <span>床</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/bed_2.png" alt="#">
+                <span>床垫</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/bed_3.png" alt="#">
+                <span>床头柜</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/bed_4.png" alt="#">
+                <span>床品4件套</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/bed_5.png" alt="#">
+                <span>床尾凳</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+    <div class="picture" style="background:url(img/show/bcc4e4db4a884629a828582c3a3046c4.gif)">
+        <p class="header_p">
+		<i>1056</i>
+		篇精选晒单
+		</p>
+		<h1 class="header_title">看真实生活里的造作美学</h1>
+    </div>
+    <div id="container">
+        <div class="main"></div>
+    </div>
+    <div id="loading"><img src="img/loading.gif" alt=""></div>
+    <footer id="footer">
+        <div class="container">
+            <div class="row first-row">
+                <div class="col-sm-3 col-xs-6 left">
+                    <a href="#"><img style="width:100%;" src="img/index/common/footer-logo.png"></a>
+                    <a href="#" class="link">zaozuo.com</a>
+
+                </div>
+
+                <div class="col-sm-6 hidden-xs middle">
+                    <div class="row ">
+                        <div class="col-sm-3">
+                            <h3>关于造作</h3>
+                            <ul>
+                                <li><a href="#">团队介绍</a></li>
+                                <li><a href="#">设计团队</a></li>
+                                <li><a href="#">媒体报道</a></li>
+                                <li><a href="#">知识产权</a></li>
+                                <li><a href="#">加入造作</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <h3>帮助中心</h3>
+                            <ul>
+                                <li><a href="">购物指南</a></li>
+                                <li><a href="">订单管理</a></li>
+                                <li><a href="">常见问题</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <h3>服务支持</h3>
+                            <ul>
+                                <li><a href="">服务保障</a></li>
+                                <li><a href="">用户协议</a></li>
+                                <li><a href="">物流售后服务</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h3>商业合作</h3>
+                            <ul>
+                                <li><a href="">集合采购</a></li>
+                                <li><a href="">渠道合作</a></li>
+                                <li><a href="">品牌合作</a></li>
+                                <li><a href="">媒体合作</a></li>
+                                <li><a href="">设计师入驻</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-3 col-xs-8 right">
+                    <h3>联系我们</h3>
+                    <h2 class="tel">400-6636-926 <span>(9:00~21:00)</span></h2>
+                    <button class="CSol">在线客服</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <p>Copyright © 2015 zaozuo.com Inc.All Rights Reserved. 北京造化科技有限公司</p>
+            <p>版权所有 京ICP备14049641号-1 增值电信业务经营许可证：京ICP证150098号</p>
+            <p>造作官网-全品类设计家居品牌</p>
+        </div>
+    </footer>
+
+	<script src="js/jquery-3.2.1.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/navChange.js"></script>
+    <script src="js/check_uid.js"></script>
+    <script src="js/show.js"></script>
+
+</body>
+</html>

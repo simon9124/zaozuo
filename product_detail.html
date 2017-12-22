@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zaozuo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/product_detail.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- 模态框 -->
+<div class="video_play">
+    <img class='video_close' src="img/product_detail/pop-close-white-btn_50c3b2a.png">
+    <video class='video'>
+        <source src='video/chaoji_gif_lucasofa.mp4'/>
+        <source src='video/chaoji_gif_lucasofa.ogg'/>
+        <source src='video/chaoji_gif_lucasofa.webm'/>
+        您的浏览器版本太低，请升级！
+    </video>
+</div>
+<div id="mask"></div>
+
+<!--header-->
+<div class="wrapper" id="wrapper">
+    <div class="bg-black"></div>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><a href="#"></a></h1>
+            <ul class="nav ">
+                <li class="nav-item">
+                    <a href="#">首页</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_sofa">
+                    <a href="#">沙发</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_cab">
+                    <a href="#">柜架</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_desk">
+                    <a href="#">桌几</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_chair">
+                    <a href="#">椅凳</a>
+                </li>
+                <li class="nav-item" data-subNav="nav_bed">
+                    <a href="#">床品</a>
+                </li>
+            </ul>
+            <div class="user">
+                <div class="user-hover"></div>
+                <div class="user-img">
+                    <img src="img/nav_black/user.png" alt="#">
+                    <span class="arrow-bg"></span>
+                    <span class="arrow-font"></span>
+                </div>
+                <!--user info-->
+                <div class="user-info">
+                    <ul id="userList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--sub nav-->
+    <div class="sub-nav">
+        <div class="sub-nav__wrap" data-link="nav_sofa">
+            <a href="#">
+                <img src="img/nav_black/sofa_0.png" alt="#">
+                <span>沙发墩</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/sofa_1.png" alt="#">
+                <span>单人沙发</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/sofa_2.png" alt="#">
+                <span>双人沙发</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/sofa_3.png" alt="#">
+                <span>三人沙发</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/sofa_4.png" alt="#">
+                <span>四人沙发</span>
+            </a>
+        </div>
+
+        <div class="sub-nav__wrap" data-link="nav_cab">
+            <a href="#">
+                <img src="img/nav_black/cab_1.png" alt="#">
+                <span>置物柜</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_2.png" alt="#">
+                <span>书柜|书架</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_3.png" alt="#">
+                <span>电视柜</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_4.png" alt="#">
+                <span>置物架</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_5.png" alt="#">
+                <span>衣柜</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_6.png" alt="#">
+                <span>单元格</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_8.png" alt="#">
+                <span>衣帽架</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/cab_9.png" alt="#">
+                <span>鞋柜|玄关</span>
+            </a>
+        </div>
+        <div class="sub-nav__wrap" data-link="nav_desk">
+            <a href="#">
+                <img src="img/nav_black/desk_1.png" alt="#">
+                <span>书桌|餐桌</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/desk_2.png" alt="#">
+                <span>茶几</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/desk_3.png" alt="#">
+                <span>边几</span>
+            </a>
+        </div>
+        <div class="sub-nav__wrap" data-link="nav_chair">
+            <a href="#">
+                <img src="img/nav_black/chair_1.png" alt="#">
+                <span>座椅</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/chair_2.png" alt="#">
+                <span>坐墩</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/chair_3.png" alt="#">
+                <span>凳子</span>
+            </a>
+        </div>
+        <div class="sub-nav__wrap" data-link="nav_bed">
+            <a href="#">
+                <img src="img/nav_black/bed_1.png" alt="#">
+                <span>床</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/bed_2.png" alt="#">
+                <span>床垫</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/bed_3.png" alt="#">
+                <span>床头柜</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/bed_4.png" alt="#">
+                <span>床品4件套</span>
+            </a>
+            <a href="#">
+                <img src="img/nav_black/bed_5.png" alt="#">
+                <span>床尾凳</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!--商品详情&加入购物车-->
+<div class="container description">
+    <div class="row">
+        <div class="col-md-7 col-md-offset-1 col-xs-12 descriptionBig">
+            <img src="img/product_detail/59a8c9b673723980fbf4c18a2918954e.jpg">
+            <img src="img/product_detail/b0b1fd5d1c7c2c8be7dec8dd60289807.jpg">
+        </div>
+        <div class="col-md-4 col-xs-12 description">
+            <p>COFA L</p>
+            <p class="produce_price">￥46988</p>
+            <p>设计师手选组合，最高可省¥4447，马上看看</p>
+            <p>
+                精密家具，仅限北上广深购买；定制高端产品，下单后除品质问题外，不予退换，详询造作客服
+            </p>
+            <p>
+                今天下单，将于2017-12-04前发货，大件家具会致电确认
+            </p>
+            <div class="row colorSelected">
+                <div class="col-xs-2 selectLeft">
+                    颜&nbsp;&nbsp;&nbsp;&nbsp;色：
+                </div>
+                <div class="col-xs-3 selectRight">
+                    <div class='borderHidden'>
+                        <div class="color">
+                            <img src="img/product_detail/831ae72c67ac373db8ef1c4ac8cbc34f@!small.jpg">
+                        </div>
+                    </div>
+                    <div class='borderHidden'>
+                        <div class="color">
+                            <img src="img/product_detail/4dead332aedf3b1483981fc99c53678e@!small.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row styleSelected">
+                <div class="col-xs-2 selectLeft">
+                    款&nbsp;&nbsp;&nbsp;&nbsp;型：
+                </div>
+                <div class="col-xs-3 borderHidden2">
+                    <div class="styleName">
+                        <span>全幅版三人座</span>
+                    </div>
+                </div>
+                <div class="col-xs-3 borderHidden2">
+                    <div class="styleName">
+                        <span>全幅版单人座</span>
+                    </div>
+                </div>
+                <div class="col-xs-3 borderHidden2">
+                    <div class="styleName">
+                        <span>全幅版脚蹲</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row styleSelected">
+                <div class="col-xs-2 selectLeft">
+                </div>
+                <div class="col-xs-3 borderHidden2">
+                    <div class="styleName">
+                        <span>精致版三人座</span>
+                    </div>
+                </div>
+                <div class="col-xs-3 borderHidden2">
+                    <div class="styleName">
+                        <span>精致版单人座</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row buy">
+                <span class="number">
+									<input class="numInput" value="1">
+                    <span class='numPlus'>＋</span>
+                    <span class='numMinus'>－</span>
+                </span>
+                <span>立即购买</span>
+                <span>加入购物车</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--视频&大图片-->
+<div class="container imgBig">
+    <!--视频-->
+    <div class="designer_video">
+        <img src="img/product_detail/47acd6ccdbe2c72729f9050d30640428.jpg">
+        <div class="container">
+            <img src="img/product_detail/f2487f0e9fc2cb0ffba002bd48c020a8@!small.jpg">
+            <div class="designer_detail">
+                <p>Luca Nichetto</p>
+                <p>Italy | Sweden</p>
+                <span>了解更多</span>
+                <img class='play_video' src="img/product_detail/video-play-bg_063bf28.png">
+            </div>
+            <p>意大利及瑞典著名建筑师、设计师，造作艺术总监。2013年Interior Innovation Adward和Elle Decor Italy联合授予的年度设计师，IMM
+                Cologne荣誉嘉宾，2009年EDIDA年度青年设计师，2008年IF产品设计奖，2008年Gran Design
+                Award.作为欧洲久负盛名的设计师，两个设计事务所的创始人，各大国际设计展的设计师和策展人，Luca亲手主持过上百个家具和工业设计项目，但却保始终持着一颗匠人之心。</p>
+        </div>
+    </div>
+
+    <!--5张图-->
+    <div class="product_detailImgs ">
+        <div class="magnifier">
+            <div class="bigDetailImgs">
+                <div class="bigDetailImgs_row">
+                    <img src="img/product_detail/95ab0421ce35002db76d63f1c0820bc0.jpg">
+                </div>
+                <div class="bigDetailImgs_row">
+                    <img src="img/product_detail/cc8a61eb73515572d34678288882c8ad.jpg">
+                </div>
+                <div class="bigDetailImgs_row">
+                    <img src="img/product_detail/ebf869cc6d08b3bb623511746b68408d.jpg">
+                </div>
+                <div class="bigDetailImgs_row">
+                    <img src="img/product_detail/bd8bfd074c3029d494474b46382715b8.jpg">
+                </div>
+                <div class="bigDetailImgs_row">
+                    <img src="img/product_detail/ef3133097a179f7438f6dbe6995cfd42.jpg">
+                </div>
+                <div id="show"></div>
+            </div>
+            <div class="largeDetailImgs">
+                <div class="largeDetailImgs_row">
+                    <img src="img/product_detail/95ab0421ce35002db76d63f1c0820bc0.jpg">
+                </div>
+                <div class="largeDetailImgs_row">
+                    <img src="img/product_detail/cc8a61eb73515572d34678288882c8ad.jpg">
+                </div>
+                <div class="largeDetailImgs_row">
+                    <img src="img/product_detail/ebf869cc6d08b3bb623511746b68408d.jpg">
+                </div>
+                <div class="largeDetailImgs_row">
+                    <img src="img/product_detail/bd8bfd074c3029d494474b46382715b8.jpg">
+                </div>
+                <div class="largeDetailImgs_row">
+                    <img src="img/product_detail/ef3133097a179f7438f6dbe6995cfd42.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="detailImgs">
+            <div class="detailImgs_row">
+                <img src="img/product_detail/0e74c5fcc4c3c88afaa085fe62629009@!small.jpg">
+                <p>全幅版三人座</p>
+            </div>
+            <div class="detailImgs_row">
+                <img src="img/product_detail/80e4a35c3b015d079214932046f98e2b@!small.jpg">
+                <p>全幅版单人座</p>
+            </div>
+            <div class="detailImgs_row">
+                <img src="img/product_detail/590cd33031bc733e3cebe25224d4fbc8@!small.jpg">
+                <p>全幅版脚墩</p>
+            </div>
+            <div class="detailImgs_row">
+                <img src="img/product_detail/d714193c395523ca41ce89f10eac2cf8@!small.jpg">
+                <p>精致版三人座</p>
+            </div>
+            <div class="detailImgs_row">
+                <img src="img/product_detail/e2149b367a1689d8da3fe5a28cfeaab4@!small.jpg">
+                <p>精致版单人座</p>
+            </div>
+        </div>
+    </div>
+
+    <!--了解皮质供应商-->
+    <div class="pullDown">
+        <img src="img/product_detail/33ad515923f1f28b2e23ed6e5b727ab6.jpg">
+        <div class="pullDown_detail">
+            <p>COFA L. Long. Luxury. Leather. </p>
+            <p>纯进口头层全青牛皮，来自意大利皮料供应商DANI。严选人工精心饲育圈养并阉割的公牛，皮纤维缜密、皮面保持自然颈纹的天然状态，每一张全青皮均保留独特纹理，是高档皮料之选</p>
+            <p>了解皮质供应商</p>
+        </div>
+    </div>
+    <div class="container DANI">
+        <img src="img/product_detail/d88f2a3d3cb819c30b04b0cfdac6015f.jpg">
+        <div class="DANI_detail">
+            <p>意大利皮料供应商DANI</p>
+            <p>意大利Dani Sustainable Leather公司专业研发生产皮革产品，经过RAL-UZ 148、ISO
+                14025等多项国际权威认证，质量及环保性极佳，客户群包括玛莎拉蒂、宝马、奔驰、苹果公司、卡西纳等知名品牌。</p>
+            <div>
+                <p class='pullUp'>收起</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="combine_recommdation">
+    <div class="container">
+        <div class="row">
+            <h1 class="">造作官方推荐组合</h1>
+        </div>
+        <div class="row recommdation">
+            <div class="col-sm-8 col-xs-12 recLeft">
+                <div class="col-md-2 col-xs-5 rec">
+                    <img src="img/product_detail/8d79d2080a38fe19cdf038b23c6a7cc8@!small.jpg">
+                    <p>COFA L三人位</p>
+                    <p>￥46988起 × 1</p>
+                    <div class="col-xs-1 plus">
+                        +
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-5 rec">
+                    <img src="img/product_detail/9b8221ab1b9df1aa10c0dff949fb28bf@!small.jpg">
+                    <p>凝沙羊毛手织地毯</p>
+                    <p>￥3999起 × 1</p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 recRight">
+                <p>COFA L+凝沙羊毛地毯</p>
+                <p>
+                    <span class="price">¥48359 起</span>
+                    最高可省¥3198
+                </p>
+                <p class="addCart">加入购物车</p>
+            </div>
+        </div>
+        <div class="row recommdation">
+            <div class="col-sm-8 col-xs-12 recLeft">
+                <div class="col-md-2 col-xs-5 rec">
+                    <img src="img/product_detail/8d79d2080a38fe19cdf038b23c6a7cc8@!small.jpg">
+                    <p>COFA L三人位</p>
+                    <p>￥46988起 × 1</p>
+                    <div class="col-xs-1 plus">
+                        +
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-5 rec">
+                    <img src="img/product_detail/9b8221ab1b9df1aa10c0dff949fb28bf@!small.jpg">
+                    <p>凝沙羊毛手织地毯</p>
+                    <p>￥3999起 × 1</p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 recRight">
+                <p>COFA L+凝沙羊毛地毯</p>
+                <p>
+                    <span class="price">¥48359 起</span>
+                    最高可省¥3198
+                </p>
+                <p class="addCart">加入购物车</p>
+            </div>
+        </div>
+        <div class="row recommdation">
+            <div class="col-sm-8 col-xs-12 recLeft">
+                <div class="col-md-2 col-xs-5 rec">
+                    <img src="img/product_detail/8d79d2080a38fe19cdf038b23c6a7cc8@!small.jpg">
+                    <p>COFA L三人位</p>
+                    <p>￥46988起 × 1</p>
+                    <div class="col-xs-1 plus">
+                        +
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-5 rec">
+                    <img src="img/product_detail/9b8221ab1b9df1aa10c0dff949fb28bf@!small.jpg">
+                    <p>凝沙羊毛手织地毯</p>
+                    <p>￥3999起 × 1</p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 recRight">
+                <p>COFA L+凝沙羊毛地毯</p>
+                <p>
+                    <span class="price">¥48359 起</span>
+                    最高可省¥3198
+                </p>
+                <p class="addCart">加入购物车</p>
+            </div>
+        </div>
+        <div class="row recommdation">
+            <div class="col-sm-8 col-xs-12 recLeft">
+                <div class="col-md-2 col-xs-5 rec">
+                    <img src="img/product_detail/8d79d2080a38fe19cdf038b23c6a7cc8@!small.jpg">
+                    <p>COFA L三人位</p>
+                    <p>￥46988起 × 1</p>
+                    <div class="col-xs-1 plus">
+                        +
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-5 rec">
+                    <img src="img/product_detail/9b8221ab1b9df1aa10c0dff949fb28bf@!small.jpg">
+                    <p>凝沙羊毛手织地毯</p>
+                    <p>￥3999起 × 1</p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 recRight">
+                <p>COFA L+凝沙羊毛地毯</p>
+                <p>
+                    <span class="price">¥48359 起</span>
+                    最高可省¥3198
+                </p>
+                <p class="addCart">加入购物车</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row first-row">
+            <div class="col-sm-3 col-xs-6 left">
+                <a href="#"><img style="width:100%;" src="img/index/common/footer-logo.png"></a>
+                <a href="#" class="link">zaozuo.com</a>
+
+            </div>
+
+            <div class="col-sm-6 hidden-xs middle">
+                <div class="row ">
+                    <div class="col-sm-3">
+                        <h3>关于造作</h3>
+                        <ul>
+                            <li><a href="#">团队介绍</a></li>
+                            <li><a href="#">设计团队</a></li>
+                            <li><a href="#">媒体报道</a></li>
+                            <li><a href="#">知识产权</a></li>
+                            <li><a href="#">加入造作</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h3>帮助中心</h3>
+                        <ul>
+                            <li><a href="">购物指南</a></li>
+                            <li><a href="">订单管理</a></li>
+                            <li><a href="">常见问题</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h3>服务支持</h3>
+                        <ul>
+                            <li><a href="">服务保障</a></li>
+                            <li><a href="">用户协议</a></li>
+                            <li><a href="">物流售后服务</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3>商业合作</h3>
+                        <ul>
+                            <li><a href="">集合采购</a></li>
+                            <li><a href="">渠道合作</a></li>
+                            <li><a href="">品牌合作</a></li>
+                            <li><a href="">媒体合作</a></li>
+                            <li><a href="">设计师入驻</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 col-xs-8 right">
+                <h3>联系我们</h3>
+                <h2 class="tel">400-6636-926 <span>(9:00~21:00)</span></h2>
+                <button class="CSol">在线客服</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="second-row">
+        <p>Copyright © 2015 zaozuo.com Inc.All Rights Reserved. 北京造化科技有限公司</p>
+        <p>版权所有 京ICP备14049641号-1 增值电信业务经营许可证：京ICP证150098号</p>
+        <p>造作官网-全品类设计家居品牌</p>
+    </div>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/navChange.js"></script>
+<script src="js/check_uid.js"></script>
+<script src="js/product_detail.js"></script>
+
+</body>
+</html>

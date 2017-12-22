@@ -1,0 +1,32 @@
+html, body, div, span, h1, h2, h3, p, em, small, strong, dl, dt, dd, ol, ul, li {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: siyuan,"Microsoft YaHei",sans-serif;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+}
+em, strong, i {
+  font-style: normal;
+}
+h1, h2, h3 {
+  font-weight: normal;
+}
+body { line-height: 1; font-size: 14px; font-family: "Microsoft Yahei"; color: #313131; background-color: #fff; }
+ul, ol {
+  list-style: none;
+}
+a {
+  color: #313131;
+  text-decoration:none !important;
+  display: inline-block;
+}
+input, button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+img {
+  vertical-align: top;
+}
